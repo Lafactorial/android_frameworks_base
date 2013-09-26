@@ -4610,6 +4610,12 @@ public final class Settings {
         public static final String RECENT_PANEL_BG_COLOR = "recent_panel_bg_color";
 
         /**
+         * Whether or not to show circle battery around the lockscreen ring
+         * @hide
+         */
+        public static final String BATTERY_AROUND_LOCKSCREEN_RING = "battery_around_lockscreen_ring";
+
+        /**
          * Whether or not to use the app sidebar
          *
          * @hide
