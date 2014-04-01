@@ -1984,6 +1984,12 @@ public final class Settings {
         public static final String SCREEN_ANIMATION_STYLE = "screen_animation_style";
 
         /**
+         * Defines the custom path to use for UI sound effects (null for default)
+         * @hide
+         */
+        public static final String CUSTOM_SOUND_EFFECTS_PATH = "custom_sound_effects_path";
+
+        /**
          * Control whether the process CPU usage meter should be shown.
          *
          * @deprecated Use {@link Global#SHOW_PROCESSES} instead
