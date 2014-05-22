@@ -1843,6 +1843,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
             }
         } else if (!mRecreating) {
             // usual case: status bar visible & not immersive
+            addAppCircleSidebar();
 
             // show the ticker if there isn't already a heads up
             if (mInterruptingNotificationEntry == null) {
