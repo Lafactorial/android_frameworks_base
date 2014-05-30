@@ -42,6 +42,7 @@
   <!-- Smooth Progress Bar -->
   <java-symbol type="dimen" name="spb_default_stroke_width" />
   <java-symbol type="dimen" name="spb_default_stroke_separator_length" />
+  <java-symbol type="bool" name="spb_default_progressiveStart_activated" />
   <java-symbol type="bool" name="spb_default_reversed" />
   <java-symbol type="string" name="spb_default_speed" />
   <java-symbol type="color" name="spb_default_color" />
