@@ -129,6 +129,9 @@ interface IWindowManager
      */
     void showCustomIntentOnKeyguard(inout Intent intent);
 
+    // AppCircle sidebar Floating Mode
+    void notifyFloatActivityTouched(IBinder token, boolean force);
+
     void closeSystemDialogs(String reason);
 
     // These can only be called with the SET_ANIMATON_SCALE permission.
