@@ -4760,6 +4760,13 @@ public final class Settings {
         public static final String WHITELIST_APP_CIRCLE_BAR = "whitelist_app_circle_bar";
 
         /**
+         * Recent panel background color
+         *
+         * @hide
+         */
+        public static final String RECENT_PANEL_BG_COLOR = "recent_panel_bg_color";
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
