@@ -2910,6 +2910,12 @@ public final class Settings {
          */
         public static final String QUICK_SETTINGS_TILES = "quick_settings_tiles";
 
+        /**
+         * Whether F-Charge is enabled, only when the kernel support it
+         *
+         * @hide
+         */
+        public static final String FCHARGE_ENABLED = "fcharge_enabled";
 
         /**
          * Quick Settings show small icons

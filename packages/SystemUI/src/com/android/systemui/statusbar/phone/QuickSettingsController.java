@@ -49,6 +49,7 @@ import static com.android.internal.util.cm.QSConstants.TILE_WIFIAP;
 import static com.android.internal.util.cm.QSConstants.TILE_WIMAX;
 import static com.android.internal.util.cm.QSConstants.TILE_POWER;
 import static com.android.internal.util.cm.QSConstants.TILE_THEME;
+import static com.android.internal.util.cm.QSConstants.TILE_FASTCHARGE;
 
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
@@ -109,6 +110,7 @@ import com.android.systemui.quicksettings.WiFiTile;
 import com.android.systemui.quicksettings.WifiAPTile;
 import com.android.systemui.quicksettings.PowerMenuTile;
 import com.android.systemui.quicksettings.ThemeTile;
+import com.android.systemui.quicksettings.FastChargeTile;
 import com.android.systemui.statusbar.phone.QuickSettingsContainerView.QSSize;
 
 import java.util.ArrayList;
@@ -310,6 +312,8 @@ public class QuickSettingsController {
                 qs = new PowerMenuTile(mContext, this);
             } else if (tile.equals(TILE_THEME)) {
                 qs = new ThemeTile(mContext, this);
+            } else if (tile.equals(TILE_FASTCHARGE)) {
+                qs = new FastChargeTile(mContext, this);
             }
 
             if (qs != null) {
