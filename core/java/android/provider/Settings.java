@@ -4220,6 +4220,24 @@ public final class Settings {
         public static final String LOCKSCREEN_MAXIMIZE_WIDGETS = "lockscreen_maximize_widgets";
 
         /**
+         * NotificationPanel BlurBackground
+         * @hide
+         */
+        public static final String NOTIFICATIONPANEL_BLURBACKGROUND = "notificationpanel_blurbackground";
+
+        /**
+         * NotificationPanel BlurBackground Blur Radius
+         * @hide
+         */
+        public static final String NOTIFICATIONPANEL_BLURBACKGROUND_BLUR_RADIUS = "notificationpanel_blurbackground_blur_radius";
+
+        /**
+         * NotificationPanel BlurBackground Blur Fade
+         * @hide
+         */
+        public static final String NOTIFICATIONPANEL_BLURBACKGROUND_FADE = "notificationpanel_blurbackground_fade";
+
+        /**
          * HALO, should default to 0 (no, do not show)
          * @hide
          */
