@@ -1,11 +1,16 @@
 package com.android.systemui.quicksettings;
 
+import android.animation.Animator;
+import android.animation.AnimatorInflater;
+import android.animation.AnimatorSet;
+import android.animation.Animator.AnimatorListener;
 import android.app.ActivityManagerNative;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
+import android.os.Handler;
 import android.os.RemoteException;
 import android.os.UserHandle;
 import android.os.Vibrator;
@@ -45,6 +50,7 @@ public class QuickSettingsTile implements OnClickListener {
     protected SharedPreferences mPrefs;
 
     protected Vibrator mVibrator;
+    private Handler mHandler = new Handler();
 
     public QuickSettingsTile(Context context, QuickSettingsController qsc) {
         this(context, qsc, R.layout.quick_settings_tile_basic);
@@ -144,6 +150,45 @@ public class QuickSettingsTile implements OnClickListener {
         }
     }
 
+    public boolean isFlipTilesEnabled() {
+        return (Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.QUICK_SETTINGS_TILES_FLIP, 1) == 1);
+    }
+
+    public void flipTile(int delay) {
+        flipTile(delay, true);
+    }
+
+    public void flipTile(int delay, boolean flipRight) {
+        if (!isFlipTilesEnabled()) { return; }
+        final AnimatorSet anim = (AnimatorSet) AnimatorInflater.loadAnimator(
+                mContext,
+                (flipRight ? R.anim.flip_right : R.anim.flip_left));
+        anim.setTarget(mTile);
+        anim.setDuration(200);
+        anim.addListener(new AnimatorListener(){
+
+            @Override
+            public void onAnimationEnd(Animator animation) {}
+            @Override
+            public void onAnimationStart(Animator animation) {}
+            @Override
+            public void onAnimationCancel(Animator animation) {}
+            @Override
+            public void onAnimationRepeat(Animator animation) {}
+
+        });
+
+        Runnable doAnimation = new Runnable(){
+            @Override
+            public void run() {
+                anim.start();
+            }
+        };
+
+        mHandler.postDelayed(doAnimation, delay);
+    }
+
     void startSettingsActivity(String action) {
         Intent intent = new Intent(action);
         startSettingsActivity(intent);
@@ -179,6 +224,7 @@ public class QuickSettingsTile implements OnClickListener {
         }
 
         vibrateTile(30);
+        flipTile(0);
     }
 
     public boolean isVibrationEnabled() {
