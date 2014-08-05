@@ -4238,6 +4238,12 @@ public final class Settings {
         public static final String NOTIFICATIONPANEL_BLURBACKGROUND_FADE = "notificationpanel_blurbackground_fade";
 
         /**
+         * NotificationPanel BlurBackground Blur Colorfilter
+         * @hide
+         */
+        public static final String NOTIFICATIONPANEL_BLURBACKGROUND_COLORFILTER = "notificationpanel_blurbackground_color";
+
+        /**
          * HALO, should default to 0 (no, do not show)
          * @hide
          */
