@@ -3513,6 +3513,12 @@ public final class Settings {
         public static final String PROGRESSBAR_INTERPOLATOR = "progressbar_interpolator";
 
         /**
+	 * Lockscreen Music Screen Switchable
+	 * @hide
+	 */
+	public static final String LOCKSCREEN_MUSIC_SWITCH ="lockscreen_music_switch";
+
+        /**
          * Display style of the status bar battery information
          * 0: Display the battery an icon in portrait mode
          * 2: Display the battery as a circle
