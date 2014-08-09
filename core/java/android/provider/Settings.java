@@ -3519,6 +3519,12 @@ public final class Settings {
 	public static final String LOCKSCREEN_MUSIC_SWITCH ="lockscreen_music_switch";
 
         /**
+         * ToastAnimation
+         * @hide
+         */
+        public static final String TOAST_ANIMATION = "toast_animation";
+
+        /**
          * Display style of the status bar battery information
          * 0: Display the battery an icon in portrait mode
          * 2: Display the battery as a circle
