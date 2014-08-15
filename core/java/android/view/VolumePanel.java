@@ -33,6 +33,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.database.ContentObserver;
+import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.media.AudioService;
 import android.media.AudioSystem;
@@ -128,6 +129,8 @@ public class VolumePanel extends Handler implements OnSeekBarChangeListener, Vie
     private boolean mVoiceCapable;
     private boolean mVolumeLinkNotification;
     private int mCurrentOverlayStyle = -1;
+    private Drawable defaultBackground;
+    private int mPanelColor;
     private int mCustomTimeoutDelay = TIMEOUT_DELAY;
 
     private final boolean mTranslucentDialog;
@@ -249,6 +252,7 @@ public class VolumePanel extends Handler implements OnSeekBarChangeListener, Vie
             final int overlayStyle = Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.MODE_VOLUME_OVERLAY, VOLUME_OVERLAY_EXPANDABLE);
             changeOverlayStyle(overlayStyle);
+            setColor();
             mCustomTimeoutDelay = Settings.System.getInt(mContext.getContentResolver(),
                     Settings.System.VOLUME_PANEL_TIMEOUT, TIMEOUT_DELAY);
         }
@@ -373,6 +377,9 @@ public class VolumePanel extends Handler implements OnSeekBarChangeListener, Vie
                 Settings.System.getUriFor(Settings.System.MODE_VOLUME_OVERLAY), false,
                 mSettingsObserver);
         context.getContentResolver().registerContentObserver(
+                Settings.System.getUriFor(Settings.System.VOLUME_PANEL_BG_COLOR), false,
+                mSettingsObserver);
+        context.getContentResolver().registerContentObserver(
                 Settings.System.getUriFor(Settings.System.VOLUME_PANEL_TIMEOUT), false,
                 mSettingsObserver);
 
@@ -389,6 +396,7 @@ public class VolumePanel extends Handler implements OnSeekBarChangeListener, Vie
         listenToRingerMode();
 
         applyTranslucentWindow();
+        setColor();
     }
 
     public void setLayoutDirection(int layoutDirection) {
@@ -400,8 +408,29 @@ public class VolumePanel extends Handler implements OnSeekBarChangeListener, Vie
         // Force reload the background (to do not get the old cached one)
         // and update the states.
         mPanel.setBackgroundResource(R.color.transparent);
-        mPanel.setBackgroundResource(R.drawable.dialog_full_holo_dark);
+        setColor();
         updateStates();
+    }
+
+    private void setColor() {
+        ContentResolver resolver = mContext.getContentResolver();
+
+        defaultBackground = mContext.getResources().getDrawable(
+            R.drawable.dialog_full_holo_dark).getCurrent();
+        mPanelColor = Settings.System.getIntForUser(resolver,
+                Settings.System.VOLUME_PANEL_BG_COLOR, -2, UserHandle.USER_CURRENT);
+
+        if (mPanelColor == Integer.MIN_VALUE
+            || mPanelColor == -2) {
+            // Flag to reset volume panel background color
+            mPanel.setBackground(defaultBackground);
+        } else {
+            if (mPanelColor != 0x00ffffff) {
+                mPanel.setBackgroundColor(mPanelColor);
+            } else {
+                mPanel.setBackgroundResource(R.drawable.dialog_full_holo_dark);
+            }
+        }
     }
 
     private void listenToRingerMode() {
