@@ -1621,16 +1621,10 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         return mContext.getResources().getDimensionPixelSize(R.dimen.heads_up_bottom_gap);
     }
 
-    private boolean mRecentsLongClicked = false;
     private View.OnClickListener mRecentsClickListener = new View.OnClickListener() {
         public void onClick(View v) {
-            if (!mRecentsLongClicked) {
-                awakenDreams();
-                toggleRecentApps();
-            } else {
-                awakenDreams();
-                mRecentsLongClicked = false;
-            }
+            awakenDreams();
+            toggleRecentApps();
         }
     };
 
@@ -1638,7 +1632,6 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         public boolean onLongClick(View v) {
             awakenDreams();
             recentsLongPress();
-            mRecentsLongClicked = true;
             return true;
         }
     };
