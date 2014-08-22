@@ -79,8 +79,8 @@
         />
 
     <ImageView android:id="@+id/clear_all_button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
         android:scaleType="center"
         android:src="@drawable/ic_notify_clear"
         android:background="@drawable/ic_notify_button_bg"
@@ -88,14 +88,14 @@
         />
 
     <FrameLayout android:id="@+id/action_button_holder"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
         android:layout_marginStart="4dp"
         >
 
         <ImageView android:id="@+id/hover_button"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
             android:scaleType="center"
             android:src="@drawable/ic_notify_hover_normal"
             android:background="@drawable/ic_notify_button_bg"
@@ -103,8 +103,8 @@
             />
 
         <ImageView android:id="@+id/add_tile_button"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
             android:scaleType="center"
             android:src="@drawable/ic_menu_add"
             android:background="@drawable/ic_notify_button_bg"
@@ -114,21 +114,21 @@
     </FrameLayout>
 
     <FrameLayout android:id="@+id/settings_button_holder"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
         android:layout_marginStart="4dp"
         >
         <ImageView android:id="@+id/settings_button"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
             android:scaleType="center"
             android:src="@drawable/ic_notify_settings"
             android:background="@drawable/ic_notify_button_bg"
             android:contentDescription="@string/accessibility_desc_quick_settings"
             />
         <ImageView android:id="@+id/notification_button"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
             android:scaleType="center"
             android:src="@drawable/ic_notifications"
             android:background="@drawable/ic_notify_button_bg"

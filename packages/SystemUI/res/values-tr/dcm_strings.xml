@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Content description of the halo button in the notification panel for accessibility (not sho
+         wn on the screen). [CHAR LIMIT=NONE] -->  
+    <string name="accessibility_halo">Halo bildirim oluştur.</string>
+
+    <!-- HALO -->
+    <string name="halo_dismiss">Bildirimi yoksay</string>
+    <string name="halo_hide">Gizle</string>
+    <string name="halo_clear_all">Tüm bildirimleri yoksay</string>
+    <string name="halo_silence">Gizle &amp; uyandırılana kadar sessiz</string>
+    <string name="halo_tutorial1">HALO</string>
+    <string name="halo_tutorial2">Taşo: 2x-dokun &amp; sürükle</string>
+    <string name="halo_tutorial3">Görevleri göster: Yatay sürükle</string>
+
+    <!-- TRDS -->
+    <string name="quick_settings_theme_switch_dark">Koyu tema</string>
+    <string name="quick_settings_theme_switch_light">Açık tema</string>
+
+    <!-- Power menu -->
+    <string name="quick_settings_powermenu_label">Güç menüsü</string>
+
+    <!-- Recents Ram Bar -->
+    <string name="memory">RAM</string>
+    <!-- [CHAR LIMIT=10] Running services, summary of background processes -->
+    <string name="service_free_mem"><xliff:g id="memory">%1$s</xliff:g> boş</string>
+    <!-- [CHAR LIMIT=10] Running services, summary of foreground processes -->
+    <string name="service_used_mem"><xliff:g id="memory">%1$s</xliff:g> kullanılan</string>
+
+    <string name="status_bar_notification_hide_icon_packages">Durum çubuğu uygulamaları bildirim simgelerini gizle</string>
+
+    <!-- Dialog Cancel/OK -->
+    <string name="cancel">İptal</string>
+    <string name="dlg_ok">Tamam</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
+
+   <!-- Notifications reminders -->
+   <string name="quick_settings_reminder">Hatırlatıcı</string>
+   <string name="quick_settings_reminder_title">Başlık:</string>
+   <string name="quick_settings_reminder_message">Mesaj:</string>
+   <string name="quick_settings_reminder_time">Hatırlatıcı zamanı</string>
+   <string name="quick_settings_reminder_set">Zamanı ayarla</string>
+   <string name="quick_settings_reminder_update">Zamanı güncelle</string>
+   <string name="quick_settings_reminder_no_expire">Bildirim yok</string>
+   <string name="quick_settings_reminder_dismiss">Temizle</string>
+   <string name="quick_settings_reminder_dismiss_message">Mevcut hatırlatıcıyı temizle?</string>
+   <string name="quick_settings_reminder_help_title">Dokun</string>
+   <string name="quick_settings_reminder_noti_dismiss">Yoksay</string>
+   <string name="quick_settings_reminder_help_message">Hatırlatıcı ayarlamak veya değiştirmek için yukarıdaki boş alana dokunun. Mevcut hatırlatıcıyı temizlemek için uzun basın.</string>
+
+    <!-- Slim recents -->
+    <string name="status_bar_recent_playstore_item_title">Play Store</string>
+    <string name="status_bar_recent_amazon_item_title">Amazon Store</string>
+
+    <!-- Long-press back kill application -->
+    <string name="app_killed_message">Uygulama sonlandırıldı</string>
+
+   <!-- App sidebar -->
+   <string name="default_folder_text">Klasör</string>
+   <string name="title_activity_sidebar_configuration">İçeriği ayarla</string>
+   <string name="action_save">Kaydet</string>
+   <string name="toast_items_saved">Uygulama çubuğu öğeleri kaydedildi.</string>
+   <string name="content_setup_instructions">Sağdaki öğelere basılı tutup uygulama çubuğuna sürükleyerek öğe ekleyin.\n\nUygulama çubuğunda varolan bir öğenin üstüne sürükleyerek öğeleri klasörde birleştirin.\n\nÖğeyi kaldırmak için uygulama çubuğunun dışına sürükleyin.</string>
+   <string name="content_setup_dismiss">Devam et</string>
+   <string name="toast_not_installed">Uygulama yüklenmedi</string>
+
+   <!-- Title shown in notification popup for launching notification in floating mode -->
+   <string name="status_bar_notification_floating_item_title">Açılan pencere</string>
+   <!-- Title shown in recents popup for showing app in floating mode -->
+   <string name="status_bar_recent_floating_item_title">Açılan pencere</string>
+
+    <!-- Battery status in pie controls -->
+    <string name="pie_battery_status_charging">Şarj oluyor (<xliff:g id="percent">%d</xliff:g>%%)</string>
+    <string name="pie_battery_status_full">Şarj oldu</string>
+    <string name="pie_battery_status_discharging"><xliff:g id="percent">%d</xliff:g>%% kaldı</string>
+
+    <!-- Phone status in pie controls -->
+    <string name="pie_phone_status_no_service">Servis yok</string>
+    <string name="pie_phone_status_airplane_mode">Uçak modu açık</string>
+    <string name="pie_phone_status_emergency_only">Sadece acil çağrılar</string>
+
+    <!-- Blacklisted app for floating mode -->
+    <string name="floating_mode_blacklisted_app">Mevcut uygulama karalistededir açılan pencere modunda beklenildiği gibi çalışmayabilir </string>
+
+    <!-- Title shown when app provides no interface -->
+    <string name="status_bar_floating_no_interface">Uygulama hiç arayüz sağlamıyor</string>
+
+    <!-- Title shown in recents popup for showing app in floating mode -->
+    <string name="status_bar_recent_floating_item_title">Açılan pencere</string>
+
+    <!-- First time run hover -->
+    <string name="hover_cling_text">Hover şu anda etkin.\n\nYeni bir bildirim geldiğinde, mevcut uygulamadan çıkmadan yanıtlamanıza izin veren bir yardımcı pencere görünür.</string>
+
+    <!-- Heads up -->
+    <string name="status_bar_notification_heads_up_enable_title">Bil.pencereleri etkin</string>
+    <string name="status_bar_notification_heads_up_disable_title">Bil.pencereleri devredışı</string>
+    <string name="heads_up_snooze_message">Bildirim pencereleri <xliff:g id="number">%d</xliff:g> dakika için devredışı.</string>
+
+    <!-- Fast Charge Tile -->
+    <string name="quick_settings_fcharge_usbwarning_label">USB kablosunu çıkarın</string>
+    <string name="quick_settings_fcharge_on_label">Hızlı şarj etkin</string>
+    <string name="quick_settings_fcharge_off_label">Hızlı şarj devredışı</string>
+
+    <!-- App circle sidebar -->
+    <string name="enable_switch_apps_title">Uyg.değiştir</string>
+    <string name="enable_switch_apps_message">Son uygulamalara uzun basınca çabucak önceki uygulamayı aç</string>
+    <string name="recents_switch">@string/enable_switch_apps_title</string>
+    <string name="app_stop_item_title">Uyg.sonlandır</string>
+    <string name="app_float_maximize_item_title">Genişlet</string>
+    <string name="app_float_item_title">Açılan pencere</string>
+
+</resources>
