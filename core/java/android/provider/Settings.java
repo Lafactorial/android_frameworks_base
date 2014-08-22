@@ -4860,6 +4860,20 @@ public final class Settings {
         public static final int INCOMING_CALL_STYLE_FULLSCREEN_PHOTO = 1;
 
         /**
+         * Recent card background color
+         *
+         * @hide
+         */
+        public static final String RECENT_CARD_BG_COLOR = "recent_card_bg_color";
+
+        /**
+         * Recent card text color
+         *
+         * @hide
+         */
+        public static final String RECENT_CARD_TEXT_COLOR = "recent_card_text_color";
+
+        /**
          * Whether to use the custom status bar header or not
          * @hide
          */
