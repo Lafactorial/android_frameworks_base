@@ -3295,7 +3295,14 @@ public final class Settings {
          */
         public static final String QS_QUICK_ACCESS_LINKED = "qs_quick_access_linked";
 
-       /**
+        /**
+         * Quick Settings Launch in Floating Window
+         *
+         * @hide
+         */
+        public static final String QS_FLOATING_WINDOW = "qs_floating_window";
+
+        /**
          * Quick Settings Ribbon Tiles to Use
          *
          * @hide
