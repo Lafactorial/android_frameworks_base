@@ -27,6 +27,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface.OnDismissListener;
 import android.content.BroadcastReceiver;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -43,6 +44,7 @@ import android.media.VolumeController;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Message;
+import android.os.UserHandle;
 import android.os.RemoteException;
 import android.os.Vibrator;
 import android.provider.Settings;
@@ -378,7 +380,7 @@ public class VolumePanel extends Handler implements OnSeekBarChangeListener, Vie
                 mSettingsObserver);
         context.getContentResolver().registerContentObserver(
                 Settings.System.getUriFor(Settings.System.VOLUME_PANEL_BG_COLOR), false,
-                mSettingsObserver);
+                mSettingsObserver, UserHandle.USER_ALL);
         context.getContentResolver().registerContentObserver(
                 Settings.System.getUriFor(Settings.System.VOLUME_PANEL_TIMEOUT), false,
                 mSettingsObserver);
