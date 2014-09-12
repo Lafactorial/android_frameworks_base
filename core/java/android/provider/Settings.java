@@ -3715,22 +3715,11 @@ public final class Settings {
          */
         public static final String STATUSBAR_CLOCK_DATE_STYLE = "statusbar_clock_date_style";
  
-        /**
+         /**
          * @hide
          * Stores the java DateFormat string for the date
          */
          public static final String STATUSBAR_CLOCK_DATE_FORMAT = "statusbar_clock_date_format";
-
-        /**
-         * Settings for clock font style
-         * 0 - Bold
-         * 1 - Condensed
-         * 2 - Light
-         * 3 - Light Italic
-         * 4 - Normal
-         * @hide
-         */
-        public static final String STATUSBAR_CLOCK_FONT_STYLE = "statusbar_clock_font_style";
 
         /**
          * Whether to show the signal text or signal bars.
@@ -3742,7 +3731,7 @@ public final class Settings {
          */
         public static final String STATUS_BAR_SIGNAL_TEXT = "status_bar_signal";
 
-        /**
+         /**
          * Whether to control brightness from status bar
          *
          * @hide
