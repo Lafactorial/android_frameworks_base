@@ -520,19 +520,11 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
 
         @Override
         public void onChange(boolean selfChange, Uri uri) {
-            if (uri.equals(Settings.System.getUriFor(Settings.System.STATUS_BAR_CLOCK))) {
-                updateClockLocation();
-            } else {
-                updateSettings();
-            }
-        }
-
-        // Used for notification drawer background
-        @Override
-        public void onChange(boolean selfChange, Uri uri) {
             super.onChange(selfChange, uri);
 
-            if (uri.equals(Settings.System.getUriFor(
+            if (uri.equals(Settings.System.getUriFor(Settings.System.STATUS_BAR_CLOCK))) {
+                updateClockLocation();
+            } else if (uri.equals(Settings.System.getUriFor(
                     Settings.System.NOTIFICATION_BACKGROUND))
                 || uri.equals(Settings.System.getUriFor(
                     Settings.System.NOTIFICATION_BACKGROUND_LANDSCAPE))
@@ -602,6 +594,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                     Settings.System.RECENT_CARD_TEXT_COLOR))) {
                 rebuildRecentsScreen();
             }
+
             updateSettings();
             update();
         }
