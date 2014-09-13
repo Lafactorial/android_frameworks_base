@@ -142,6 +142,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:singleLine="true"
+        android:visibility="gone"
         />
 
     <LinearLayout android:id="@+id/ticker"
