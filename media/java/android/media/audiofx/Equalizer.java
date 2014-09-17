@@ -227,10 +227,7 @@ public class Equalizer extends AudioEffect {
         param[0] = PARAM_BAND_LEVEL;
         param[1] = (int)band;
         value[0] = level;
-        try {
-            checkStatus(setParameter(param, value));
-        } catch(IllegalArgumentException e) {
-        }
+        checkStatus(setParameter(param, value));
     }
 
     /**
@@ -249,12 +246,9 @@ public class Equalizer extends AudioEffect {
 
         param[0] = PARAM_BAND_LEVEL;
         param[1] = (int)band;
-        try {
-            checkStatus(getParameter(param, result));
-            return result[0];
-        } catch(IllegalArgumentException e) {
-            return 0;
-        }
+        checkStatus(getParameter(param, result));
+
+        return result[0];
     }
 
 

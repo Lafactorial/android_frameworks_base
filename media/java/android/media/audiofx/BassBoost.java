@@ -162,11 +162,7 @@ public class BassBoost extends AudioEffect {
      */
     public void setCenterFrequency(short freq)
     throws IllegalStateException, IllegalArgumentException, UnsupportedOperationException {
-        try {
-            checkStatus(setParameter(PARAM_CENTER_FREQUENCY, freq));
-        } catch(IllegalArgumentException e) {
-            // ignore
-        }
+        checkStatus(setParameter(PARAM_CENTER_FREQUENCY, freq));
     }
 
     /**
@@ -177,13 +173,9 @@ public class BassBoost extends AudioEffect {
      * @throws UnsupportedOperationException
      */
     public short getCenterFrequency() {
-        try {
-            short[] value = new short[1];
-            checkStatus(getParameter(PARAM_CENTER_FREQUENCY, value));
-            return value[0];
-        } catch(IllegalArgumentException e) {
-            return 55;
-        }
+        short[] value = new short[1];
+        checkStatus(getParameter(PARAM_CENTER_FREQUENCY, value));
+        return value[0];
     }
 
     /**
