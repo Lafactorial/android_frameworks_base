@@ -12,7 +12,7 @@
     <string name="halo_clear_all">Tüm bildirimleri yoksay</string>
     <string name="halo_silence">Gizle &amp; uyandırılana kadar sessiz</string>
     <string name="halo_tutorial1">HALO</string>
-    <string name="halo_tutorial2">Taşo: 2x-dokun &amp; sürükle</string>
+    <string name="halo_tutorial2">Taşı: 2x-dokun &amp; sürükle</string>
     <string name="halo_tutorial3">Görevleri göster: Yatay sürükle</string>
 
     <!-- TRDS -->
@@ -103,13 +103,5 @@
     <string name="quick_settings_fcharge_usbwarning_label">USB kablosunu çıkarın</string>
     <string name="quick_settings_fcharge_on_label">Hızlı şarj etkin</string>
     <string name="quick_settings_fcharge_off_label">Hızlı şarj devredışı</string>
-
-    <!-- App circle sidebar -->
-    <string name="enable_switch_apps_title">Uyg.değiştir</string>
-    <string name="enable_switch_apps_message">Son uygulamalara uzun basınca çabucak önceki uygulamayı aç</string>
-    <string name="recents_switch">@string/enable_switch_apps_title</string>
-    <string name="app_stop_item_title">Uyg.sonlandır</string>
-    <string name="app_float_maximize_item_title">Genişlet</string>
-    <string name="app_float_item_title">Açılan pencere</string>
 
 </resources>
