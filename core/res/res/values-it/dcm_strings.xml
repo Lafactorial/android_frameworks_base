@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+  <!-- Error description on theme switch with ligtsensor mode enabled -->
+  <string name="theme_auto_switch_mode_error">La luminosità automatica basata sulla luce ambientale è attiva. Il cambio manuale non è possibile.</string>
+  
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_recordScreen">Visualizzato il contenuto registrato</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_recordScreen">Consente all'applicazione di registrare schermo dell\'utente.</string>
+
+  <!-- label for screen record item in phone options dialog -->
+  <string name="global_action_screen_record">Registrazione dello schermo</string>
+
+  <!-- label for nav bar item in phone options dialog -->
+  <string name="global_actions_nav_bar_mode">Barra di navigazione</string>
+  <!-- status message in phone options dialog for when navigation bar is on -->
+  <string name="global_actions_nav_bar_mode_on_status">Barra di navigazione attiva</string>
+  <!-- status message in phone options dialog for when navigation bar is off -->
+  <string name="global_actions_nav_bar_mode_off_status">Barra di navigazione disattivata</string>
+  <!-- Error message if user want to try to disable all navigation options -->
+  <string name="disable_navigation_pie_error">Non puoi disattivare la barra di navigazione. Non ci sono altri strumenti di navigazione attivi. Attiva la Pie per disattivare la barra di navigazione.</string>
+
+  <!-- Heads up -->
+  <string name="permlab_changeHeadsUpState">attiva o disattiva heads up</string>
+  <string name="permdesc_changeHeadsUpState">Permetti all\'app di consentire o negare ad un\'altra app la visualizzazione delle notifiche come heads up.</string>
+
+</resources>

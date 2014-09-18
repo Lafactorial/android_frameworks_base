@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Content description of the halo button in the notification panel for accessibility (not sho
+         wn on the screen). [CHAR LIMIT=NONE] -->  
+    <string name="accessibility_halo">Crea notifica halo.</string>
+
+    <!-- HALO -->
+    <string name="halo_dismiss">Respingere notifica</string>
+    <string name="halo_hide">Nascondere</string>
+    <string name="halo_clear_all">Respingere tutte le notifiche</string>
+    <string name="halo_silence">Nascondere &amp; silenzio fino svegliato</string>
+    <string name="halo_tutorial1">Questo è HALO</string>
+    <string name="halo_tutorial2">Mi Sposta: 2x-tap &amp; drag</string>
+    <string name="halo_tutorial3">Sfoglia compiti: resistenza orizzontale</string>
+
+    <!-- TRDS -->
+    <string name="quick_settings_theme_switch_dark">Tema dark</string>
+    <string name="quick_settings_theme_switch_light">Tema chiaro</string>
+
+    <!-- Power menu -->
+    <string name="quick_settings_powermenu_label">Menu power</string>
+
+    <!-- Recents Ram Bar -->
+    <string name="memory">RAM</string>
+    <!-- [CHAR LIMIT=10] Running services, summary of background processes -->
+    <string name="service_free_mem"><xliff:g id="memory">%1$s</xliff:g> libera</string>
+    <!-- [CHAR LIMIT=10] Running services, summary of foreground processes -->
+    <string name="service_used_mem"><xliff:g id="memory">%1$s</xliff:g> usata</string>
+
+    <string name="status_bar_notification_hide_icon_packages">Hide status bar app\'s notification icon(s)</string>
+
+    <!-- Dialog Cancel/OK -->
+    <string name="cancel">Anulla</string>
+    <string name="dlg_ok">Ok</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+
+    <!-- Notifications reminders -->
+    <string name="quick_settings_reminder">Promemoria</string>
+    <string name="quick_settings_reminder_title">Titolo:</string>
+    <string name="quick_settings_reminder_message">Messaggio:</string>
+    <string name="quick_settings_reminder_time">Orario promemoria</string>
+    <string name="quick_settings_reminder_set">Imposta orario</string>
+    <string name="quick_settings_reminder_update">Aggiorna orario</string>
+    <string name="quick_settings_reminder_no_expire">No notifica</string>
+    <string name="quick_settings_reminder_dismiss">Cancella promemoria</string>
+    <string name="quick_settings_reminder_dismiss_message">Cancellare il promemoria corrente?</string>
+    <string name="quick_settings_reminder_help_title">Tocca</string>
+    <string name="quick_settings_reminder_noti_dismiss">Disattiva</string>
+    <string name="quick_settings_reminder_help_message">Tocca lo spazio vuoto per impostare o cambiare il promemoria. Premi a lungo per cancellare il promemoria corrente.</string>
+
+    <!-- Slim recents -->
+    <string name="status_bar_recent_playstore_item_title">Play Store</string>
+    <string name="status_bar_recent_amazon_item_title">Amazon Store</string>
+
+    <!-- Long-press back kill application -->
+    <string name="app_killed_message">App killata</string>
+
+    <!-- App sidebar -->
+    <string name="default_folder_text">Cartella</string>
+    <string name="title_activity_sidebar_configuration">Setup di contenuto appbar</string>
+    <string name="action_save">Salva</string>
+    <string name="toast_items_saved">Articoli appbar sono state salvate.</string>
+    <string name="content_setup_instructions">Aggiungere elementi alla AppBar premendo a lungo qualsiasi elemento sulla destra e trascinarlo verso l\'appbar.\n\nCombina gli elementi in cartelle facendo cadere un oggetto su qualsiasi elemento esistente nella appbar.\n\nPer rimuovere un elemento basta trascinare fuori dalla \@appbar.</string>
+    <string name="content_setup_dismiss">Continua</string>
+    <string name="toast_not_installed">App non è installata</string>
+
+    <!-- Title shown in notification popup for launching notification in floating mode -->
+    <string name="status_bar_notification_floating_item_title">Modalità finestra </string>
+    <!-- Title shown in recents popup for showing app in floating mode -->
+    <string name="status_bar_recent_floating_item_title">Modalità finestra</string>
+
+    <!-- Battery status in pie controls -->
+    <string name="pie_battery_status_charging">Caricando (<xliff:g id="percent">%d</xliff:g>%%)</string>
+    <string name="pie_battery_status_full">Caricato</string>
+    <string name="pie_battery_status_discharging"><xliff:g id="percent">%d</xliff:g>%% rimanente</string>
+
+    <!-- Phone status in pie controls -->
+    <string name="pie_phone_status_no_service">Nessun servizio</string>
+    <string name="pie_phone_status_airplane_mode">Modalità aereo attivo</string>
+    <string name="pie_phone_status_emergency_only">Solo chiamata di emergenza</string>
+
+    <!-- Blacklisted app for floating mode -->
+    <string name="floating_mode_blacklisted_app">L\'applicazione attuale è nella lista nera potrebbe non funzionare come previsto in modalità mobile</string>
+
+    <!-- Title shown when app provides no interface -->
+    <string name="status_bar_floating_no_interface">App non fornisce alcuna interfaccia</string>
+
+    <!-- Title shown in recents popup for showing app in floating mode -->
+    <string name="status_bar_recent_floating_item_title">Modalità finestra</string>
+
+    <!-- First time run hover -->
+    <string name="hover_cling_text">Hover è ora abilitata.\n\nQuando una nuova notifica arriva, una sovrapposizione vi mostrerà che consente di rispondere ad esso senza lasciare applicazione corrente.</string>
+
+    <!-- Heads up -->
+    <string name="status_bar_notification_heads_up_enable_title">Attiva heads up</string>
+    <string name="status_bar_notification_heads_up_disable_title">Disattiva heads up</string>
+    <string name="heads_up_snooze_message">Heads up è disattivata per <xliff:g id="number">%d</xliff:g> minuti.</string>
+
+    <!-- Fast Charge Tile -->
+    <string name="quick_settings_fcharge_usbwarning_label">Rimuove il cavo USB</string>
+    <string name="quick_settings_fcharge_on_label">F-Charge Attivata</string>
+    <string name="quick_settings_fcharge_off_label">F-Charge Disattivata</string>
+
+</resources>
