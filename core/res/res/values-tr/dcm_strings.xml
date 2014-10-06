@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+  <!-- Error description on theme switch with ligtsensor mode enabled -->
+  <string name="theme_auto_switch_mode_error">Otomatik ışık durum değişikliği modu etkin. Elle değiştirme mümkün değil.</string>
+  
+  <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permlab_recordScreen">Görüntülenen içeriği kaydet</string>
+  <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+  <string name="permdesc_recordScreen">Uygulamanın kullanıcı ekranını kaydetmesine izin verir.</string>
+
+  <!-- label for screen record item in phone options dialog -->
+  <string name="global_action_screen_record">Ekran kayıt</string>
+
+  <!-- label for nav bar item in phone options dialog -->
+  <string name="global_actions_nav_bar_mode">Dolaşım çubuğu</string>
+  <!-- status message in phone options dialog for when navigation bar is on -->
+  <string name="global_actions_nav_bar_mode_on_status">Dolaşım çubuğu AÇIK</string>
+  <!-- status message in phone options dialog for when navigation bar is off -->
+  <string name="global_actions_nav_bar_mode_off_status">Dolaşım çubuğu KAPALI</string>
+  <!-- Error message if user want to try to disable all navigation options -->
+  <string name="disable_navigation_pie_error">Dolaşım çubuğunu devredışı bırakamazsınız. Başka bir dolaşım etkin değil. Dolaşım çubuğunu kapatmak için önce Pie kontrollerini etkinleştirin.</string>
+
+  <!-- Heads up -->
+  <string name="permlab_changeHeadsUpState">Bild.pencereleri etkin veya devredışı</string>
+  <string name="permdesc_changeHeadsUpState">Uygulamanın normal bildirimleri heads up modunda gösterip göstermemesine izin verir.</string>
+
+</resources>

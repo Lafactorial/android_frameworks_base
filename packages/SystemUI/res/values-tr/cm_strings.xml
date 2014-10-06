@@ -28,7 +28,7 @@
   <string name="quick_settings_report_bug">Hata bildir</string>
   <string name="quick_settings_sync">Eşitleme</string>
   <string name="quick_settings_sync_off">Eşitleme kapalı</string>
-  <string name="quick_settings_torch">Fener</string>
+  <string name="quick_settings_torch">El feneri açık</string>
   <string name="quick_settings_torch_off">El feneri kapalı</string>
   <string name="quick_settings_nfc">NFC</string>
   <string name="quick_settings_nfc_off">NFC kapalı</string>
@@ -41,7 +41,7 @@
   <string name="quick_settings_quiethours_off">Sessiz saatler kapalı</string>
   <string name="quick_settings_lte">LTE</string>
   <string name="quick_settings_lte_off">LTE kapalı</string>
-  <string name="quick_settings_volume">Ses</string>
+  <string name="quick_settings_volume">Ses seviyesi</string>
   <string name="quick_settings_camera_label">Kamera</string>
   <string name="quick_settings_network_adb_disabled_label">Devre dışı</string>
   <string name="quick_settings_network_adb_enabled_label">Etkin</string>
