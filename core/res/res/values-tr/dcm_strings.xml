@@ -23,7 +23,7 @@
   <string name="disable_navigation_pie_error">Dolaşım çubuğunu devredışı bırakamazsınız. Başka bir dolaşım etkin değil. Dolaşım çubuğunu kapatmak için önce Pie kontrollerini etkinleştirin.</string>
 
   <!-- Heads up -->
-  <string name="permlab_changeHeadsUpState">Bild.pencereleri etkin veya devredışı</string>
-  <string name="permdesc_changeHeadsUpState">Uygulamanın normal bildirimleri heads up modunda gösterip göstermemesine izin verir.</string>
+  <string name="permlab_changeHeadsUpState">Heads up etkin veya devredışı</string>
+  <string name="permdesc_changeHeadsUpState">Uygulamanın normal bildirimleri heads up modunda göstermesine veya göstermemesine izin verir.</string>
 
 </resources>

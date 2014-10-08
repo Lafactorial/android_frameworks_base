@@ -96,8 +96,8 @@
     <string name="hover_cling_text">Hover şu anda etkin.\n\nYeni bir bildirim geldiğinde, mevcut uygulamadan çıkmadan yanıtlamanıza izin veren bir yardımcı pencere görünür.</string>
 
     <!-- Heads up -->
-    <string name="status_bar_notification_heads_up_enable_title">Bil.pencereleri etkin</string>
-    <string name="status_bar_notification_heads_up_disable_title">Bil.pencereleri devredışı</string>
+    <string name="status_bar_notification_heads_up_enable_title">Heads up etkin</string>
+    <string name="status_bar_notification_heads_up_disable_title">Heads up devredışı</string>
     <string name="heads_up_snooze_message">Bildirim pencereleri <xliff:g id="number">%d</xliff:g> dakika için devredışı.</string>
 
 </resources>
